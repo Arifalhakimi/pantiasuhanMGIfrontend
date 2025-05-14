@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import ImageAbout from "../assets/img/frame28.png";
+import ImageAbout from "../assets/img/Frame28.png";
 import {
   FaPrayingHands,
   FaBookOpen,
