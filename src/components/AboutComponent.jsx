@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import ImageAbout from "../assets/img/Frame28.png";
 import {
   FaPrayingHands,
   FaBookOpen,
@@ -88,7 +87,7 @@ const AboutComponent = () => {
           <Col lg={4} className="image-about">
             <div className="image-wrapper">
               <img
-                src={ImageAbout}
+                src="/assets/img/Frame28.png"
                 alt="About"
                 className="img-fluid"
                 data-aos="fade-up"
