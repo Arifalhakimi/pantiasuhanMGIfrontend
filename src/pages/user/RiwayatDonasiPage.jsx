@@ -11,7 +11,7 @@ const RiwayatDonasiPage = () => {
     const fetchHistory = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:5000/api/donations/history", {
+        const res = await axios.get("https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/donations/history", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setHistory(res.data);

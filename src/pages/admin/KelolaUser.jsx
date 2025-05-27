@@ -54,7 +54,7 @@ const KelolaUser = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        "http://localhost:5000/api/admin/users",
+        "https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/admin/users",
         {
           headers: {
             Authorization: token ? `Bearer ${token}` : undefined,
@@ -79,7 +79,7 @@ const KelolaUser = () => {
     if (window.confirm("Apakah Anda yakin ingin menghapus user ini?")) {
       try {
         const token = localStorage.getItem("token");
-        await axios.delete(`http://localhost:5000/api/admin/users/${userId}`, {
+        await axios.delete(`https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/admin/users/${userId}`, {
           headers: {
             Authorization: token ? `Bearer ${token}` : undefined,
           },
@@ -98,7 +98,7 @@ const KelolaUser = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/admin/register",
+        "https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/admin/register",
         formData,
         {
           headers: {

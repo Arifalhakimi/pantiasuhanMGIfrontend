@@ -17,7 +17,7 @@ const TestiComponent = () => {
   useEffect(() => {
     const fetchDonations = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/donations");
+        const response = await axios.get("https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/donations");
         // Filter hanya donasi yang berhasil dan memiliki message
         const successfulDonations = response.data.filter(
           (donation) => donation.status === "success" && donation.message

@@ -29,7 +29,7 @@ const LaporanDonasi = () => {
   useEffect(() => {
     const fetchDonations = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/donations");
+        const response = await axios.get("https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/donations");
         console.log("Data donasi:", response.data);
 
         // Pastikan data yang diterima adalah array

@@ -421,7 +421,7 @@ header .container .header-box .col .text-container button:hover {
 .about-component .title-underline {
   width: 80px;
   height: 4px;
-  background: var(--secondary-color);
+  background: var(--navbar-color-text);
   margin: 0 auto 2rem;
   border-radius: 2px;
 }
@@ -470,7 +470,7 @@ header .container .header-box .col .text-container button:hover {
 }
 
 .about-component .read-more-btn {
-  background-color: var(--secondary-color);
+  background-color: var(--navbar-color-text);
   border: none;
   padding: 10px 25px;
   border-radius: 25px;
@@ -508,7 +508,7 @@ header .container .header-box .col .text-container button:hover {
   height: 5px;
   background: linear-gradient(
     90deg,
-    var(--secondary-color),
+    var(--navbar-color-text),
     var(--primary-color)
   );
 }
@@ -524,7 +524,7 @@ header .container .header-box .col .text-container button:hover {
   margin: 0 auto 1.5rem;
   background: linear-gradient(
     135deg,
-    var(--secondary-color),
+    var(--navbar-color-text),
     var(--primary-color)
   );
   border-radius: 50%;
@@ -546,7 +546,7 @@ header .container .header-box .col .text-container button:hover {
 }
 
 .about-component .feature-count {
-  color: var(--secondary-color);
+  color: var(--navbar-color-text);
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -591,7 +591,7 @@ header .container .header-box .col .text-container button:hover {
   width: 60px;
   height: 60px;
   margin: 0 auto 1rem;
-  background: var(--secondary-color);
+  background: var(--navbar-color-text);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -624,7 +624,7 @@ header .container .header-box .col .text-container button:hover {
 }
 
 .about-component .contact-info:hover {
-  color: var(--secondary-color);
+  color: var(--navbar-color-text);
 }
 
 /* Map Section Styles */
@@ -749,7 +749,7 @@ header .container .header-box .col .text-container button:hover {
 .testimonial .title-underline {
   width: 80px;
   height: 4px;
-  background: var(--secondary-color);
+  background: var(--navbar-color-text);
   margin: 0 auto 2rem;
   border-radius: 2px;
 }
@@ -763,7 +763,7 @@ header .container .header-box .col .text-container button:hover {
   width: 50px;
   height: 50px;
   border: 5px solid #f3f3f3;
-  border-top: 5px solid var(--secondary-color);
+  border-top: 5px solid var(--navbar-color-text);
   border-radius: 50%;
   margin: 0 auto 1rem;
   animation: spin 1s linear infinite;
@@ -812,7 +812,7 @@ header .container .header-box .col .text-container button:hover {
   top: 20px;
   right: 20px;
   font-size: 2rem;
-  color: var(--secondary-color);
+  color: var(--navbar-color-text);
   opacity: 0.2;
 }
 
@@ -831,7 +831,7 @@ header .container .header-box .col .text-container button:hover {
 .testimonial .testimonial-avatar {
   width: 60px;
   height: 60px;
-  background: var(--secondary-color);
+  background: var(--navbar-color-text);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -852,7 +852,7 @@ header .container .header-box .col .text-container button:hover {
 }
 
 .testimonial .donation-amount {
-  color: var(--secondary-color);
+  color: var(--navbar-color-text);
   font-weight: 600;
   margin: 5px 0 0;
   font-size: 1rem;
@@ -894,13 +894,13 @@ header .container .header-box .col .text-container button:hover {
 .testimonial .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background: var(--secondary-color);
+  background: var(--navbar-color-text);
   opacity: 0.5;
 }
 
 .testimonial .swiper-pagination-bullet-active {
   opacity: 1;
-  background: var(--secondary-color);
+  background: var(--navbar-color-text);
 }
 
 /* Responsive Styles */

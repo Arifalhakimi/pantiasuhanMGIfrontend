@@ -16,7 +16,7 @@ import LogoNavbar from "../assets/img/navbar/logopantiasuhan.png";
 
 // Konfigurasi axios default
 const api = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net",
   headers: {
     "Content-Type": "application/json",
   },
@@ -181,7 +181,7 @@ const NavbarComponent = () => {
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = "http://localhost:5000/api/auth/google";
+    window.location.href = "https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/auth/google";
   };
 
   const handleLogout = () => {

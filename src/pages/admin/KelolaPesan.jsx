@@ -49,7 +49,7 @@ const KelolaPesan = () => {
   const fetchPesan = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://localhost:5000/api/pertanyaan", {
+      const response = await axios.get("https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/pertanyaan", {
         headers: {
           Authorization: token ? `Bearer ${token}` : undefined,
           "Content-Type": "application/json",
@@ -74,7 +74,7 @@ const KelolaPesan = () => {
     if (window.confirm("Apakah Anda yakin ingin menghapus pesan ini?")) {
       try {
         const token = localStorage.getItem("token");
-        await axios.delete(`http://localhost:5000/api/pertanyaan/${id}`, {
+        await axios.delete(`https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/pertanyaan/${id}`, {
           headers: {
             Authorization: token ? `Bearer ${token}` : undefined,
           },

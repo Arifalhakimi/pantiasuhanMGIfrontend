@@ -31,7 +31,7 @@ const ContactPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/pertanyaan",
+        "https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/pertanyaan",
         {
           name: formData.nama,
           email: formData.email,

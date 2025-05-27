@@ -11,7 +11,6 @@ import {
   FaComment,
 } from "react-icons/fa";
 
-
 const DonasiPage = () => {
   const [selectedAmount, setSelectedAmount] = useState(0);
   const [customAmount, setCustomAmount] = useState("");
@@ -35,9 +34,12 @@ const DonasiPage = () => {
 
   const fetchUserData = async (token) => {
     try {
-      const response = await axios.get("http://localhost:5000/api/auth/me", {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const response = await axios.get(
+        "https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/auth/me",
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
       setUserData(response.data);
       setName(response.data.name);
       setOriginalName(response.data.name);
@@ -77,7 +79,7 @@ const DonasiPage = () => {
       const headers = token ? { Authorization: `Bearer ${token}` } : {};
 
       const response = await axios.post(
-        "http://localhost:5000/api/donations/donate",
+        "https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/donations/donate",
         {
           user_id: userData?.id || null,
           name: isAnonymous ? "Hamba Allah" : name,
@@ -128,7 +130,6 @@ const DonasiPage = () => {
           <Row className="nominal">
             <div className="text-center mb-4">
               <h1 className="donasi-title">Donasi</h1>
-              
             </div>
             <Col>
               <div className="donasi-form-container">

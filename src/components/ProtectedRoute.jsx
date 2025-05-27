@@ -16,7 +16,7 @@ const ProtectedRoute = ({ children, allowedRoles }) => {
           return;
         }
 
-        const response = await axios.get("http://localhost:5000/api/auth/me", {
+        const response = await axios.get("https://backend-pantiasuhan-bhhhgnhjhshxczhd.indonesiacentral-01.azurewebsites.net/api/auth/me", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
